@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+
+}
+
+.title-bar {
+    height: 5vh;
+    background-color: #107c41;
+        display: flex;
+    flex-direction: column;
+}
+
+.menu-bar {
+    height: 5vh;
+}
+
+.menu-icon-bar {
+    height: 6px;
+}
+
+.formula-bar {
+    height: 5vh;
+}
+
+.data-container {
+    height: 75vh;
+}
+
+.sheet-bar {
+    height: 4vh;
+}
