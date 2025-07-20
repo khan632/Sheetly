@@ -19,14 +19,59 @@
             <div class="menu-formula menu-item">Formula</div>
             <div class="menu-help menu-item">File</div>
         </div>
-        <div class="menu-icon-bar"></div>
+        <div class="menu-icon-bar">
+            <div class="material-icons menu-icon icon-cut">content_cut</div>
+            <div class="material-icons menu-icon icon-copy">content_copy</div>
+            <div class="material-icons menu-icon icon-paste">content_paste</div>
+            <select class="selector font-family-selector">
+                <option style="font-family: Noto Sans;" value="Noto Sans">Noto Sans</option>
+                <option style="font-family: 'Courier New', Courier, monospace;" value="Courier New">Courier New</option>
+                <option style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" value="Segoe UI">Segoe UI</option>
+                <option style="font-family: 'Times New Roman', Times, serif;" value="Times New Roman">Times New Roman</option>
+                <option style="font-family: Verdana, Geneva, Tahoma, sans-serif;" value="Verdana">Verdana</option>
+                <option style="font-family: Arial, Helvetica, sans-serif;" value="Arial">Arial</option>
+                <option style="font-family: cursive;" value="cursive">cursive</option>
+                <option style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" value="Trebuchet MS">Trebuchet MS</option>
+                <option style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" value="Gill Sans">Gill Sans</option>
+                <option style="font-family: fantasy;" value="fantasy">Fantasy</option>
+            </select>
+            <select style="margin-left: 15px;" class="selector font-size">
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="16">16</option>
+                <option value="20">20</option>
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="30">30</option>
+                <option value="36">36</option>
+                <option value="48">48</option>
+                <option value="64">64</option>
+            </select>
+            <div class="material-icons menu-icon icon-bold">format_bold</div>
+            <div class="material-icons menu-icon icon-italic">format_italic</div>
+            <div class="material-icons menu-icon icon-undeline">format_underline</div>
+            <div class="material-icons menu-icon icon-align-left">format_align_left</div>
+            <div class="material-icons menu-icon icon-align-center">format_align_center</div>
+            <div class="material-icons menu-icon icon-align-right">format_align_right</div>
+            <div class="material-icons menu-icon icon-color-fill">format_color_fill</div>
+            <div class="material-icons menu-icon icon-color-text">format_color_text</div>
+        </div>
         <div class="formula-bar"></div>
         <div class="data-container">
             <div class="row-name-container"></div>
             <div class="column-name-conatiner"></div>
             <div class="input-cell-container"></div>
         </div>
-        <div class="sheet-bar"></div>
+        <div class="sheet-bar">
+            <div class="scrollbar">
+                <div class="material-icons icon-left-scroll">arrow_left</div>
+                <div class="material-icons icon-right-scroll">arrow_right</div>
+            </div>
+            <div class="material-icons icon-add">add_circle</div>
+            <div class="sheet-tab-container">
+                <div class="sheet-tab">Sheet 1</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -1,7 +1,7 @@
+/* universal */
 *{
     box-sizing: border-box;
     font-size: 15px;
-    font-weight: 500;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -10,14 +10,17 @@ body {
     overflow: hidden;
 }
 
+/* main container */
+
 .container {
     height: 100vh;
 
 }
 
+/* title bar */
 .title-bar {
     height: 5vh;
-    background-color: #107c41;
+    background-color: oklch(44.8% 0.119 151.328);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,6 +28,7 @@ body {
     color: #dcdcdc;
 }
 
+/* menu bar */
 .menu-bar {
     height: 5vh;
     background-color: #4b946c;
@@ -55,10 +59,45 @@ body {
   cursor: pointer;
 }
 
+/* menu icon bar */
 .menu-icon-bar {
-    height: 6px;
+    height: 6vh;
+    background-color: oklch(96.7% 0.003 264.542);
+    display: flex;
+    align-items: center;
 }
 
+.menu-icon {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+    background-color: oklch(87.2% 0.01 258.338);
+}
+
+.font-family-selector {
+    width: 200px;
+}
+
+.font-size {
+    width: 100px;
+}
+
+.selector {
+    height: 30px;
+    font-size: 18px;
+}
+
+.selector option {
+    font-size: 18px;
+}
+
+/* formula bar */
 .formula-bar {
     height: 5vh;
 }
@@ -67,6 +106,52 @@ body {
     height: 75vh;
 }
 
+
+/* sheet bar */
+
+.scrollbar {
+    width: 70px;
+}
+
 .sheet-bar {
     height: 4vh;
+    display: flex;
+    align-items: center;
+}
+
+.icon-left-scroll, .icon-right-scroll {
+    font-size: 30px !important;
+}
+
+.icon-left-scroll:hover, .icon-right-scroll:hover {
+    cursor: pointer;
+    background-color: oklch(87.2% 0.01 258.338);
+}
+
+.icon-add {
+    color: #4b946c;
+    width: 40px;
+}
+.icon-add:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
+.sheet-tab-container {
+    border: 1px solid lightgray;
+    width: calc(100vw - 110px);
+}
+.sheet-tab {
+    border-bottom: 4px solid #107c41;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    font-weight: 700;
+    border-right: 1px solid lightgray;
+}
+
+.sheet-tab:hover {
+    cursor: default;
 }
